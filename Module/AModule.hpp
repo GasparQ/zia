@@ -35,6 +35,7 @@ namespace apouche {
         */
 	virtual ~AModule() {
             _logger->info("Module '" + _name + "' (" + _desc + ") v" + _version + " Destroying ...");
+            delete(_logger);
         };
         /*!
         *  \brief Constructor
