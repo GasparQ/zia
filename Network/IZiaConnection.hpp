@@ -58,12 +58,6 @@ namespace apouche
          * @return A new HttpRequest
          */
         virtual IHttpRequest    *getNextRequest() = 0;
-
-        /**
-         * @brief Allow user to add a callback that will be executed when the client will disconnects
-         * @param callback The callback to add and to execute when disconnects
-         */
-        virtual void    addOnDisconnectCallback(std::function<void()> const &callback) = 0;
     };
 }
 

@@ -48,16 +48,6 @@ namespace apouche {
         };
 
         /*!
-         * \brief Initialise the module instance with the HTTP configuration. Not mandatory to implement.
-         * \param conf The configuration loaded
-         * \return True if the configuration went fine, false either. False mean that the module must not be processed.
-         */
-        virtual bool init(apouche::IHttpConf *conf)
-        {
-            return true;
-        }
-
-        /*!
             *  \brief Set the name
             *
             *  Set the name of module
